@@ -1,3 +1,2 @@
 # sziddhant.github.io
-Webpage
-Personal Website
+Personal Webpage
