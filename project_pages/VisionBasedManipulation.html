@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Vision Based Manipulation and Grasping Using 7-DOF Robotic Arm</title>
+=======
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+
+* {
+    box-sizing: border-box;
+}
+.try {
+  padding: 60% 0% 0% 27%;
+}
+.column {
+    float: left;
+    width: 50%;
+  padding: 0% 0% 0% 0%;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 560px) {
+    .column {
+        width: 100%;
+       
+    }
+}
+	
+html,body,pre {
+
+
+
+  font-family: "calibri",curcive, sans-serif; 
+  color:#ffffff;
+}
+
+html, body {
+  
+  /* background-image: url(ghat2-mdin.jpeg); */
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center ;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #000000;
+}
+
+
+</style>
+
+
+  <!-- google fonts -->  
+  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style-starter.css">
+</head>
+
+<body>
+<!-- header -->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand" href="../index.html">
+              <span class="fa fa-terminal"></span> Siddhant
+          </a>
+          <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="../projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                    <a class="nav-link" href="../publications.html">Publications</a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                    <a class="nav-link" href="../experience.html">Experiences</a>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="../contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!-- //header -->
+
+<!-- banner section -->
+
+<section id="home" class="w3l-banner py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div>
+              <h1 >Vision Based Manipulation and Grasping Using 7-DOF Robotic Arm<sup>(Jan 2020 - June 2020)</sup> </h1>
+
+              <span class="title-small">Mentor: <a href="http://surilshah.weebly.com/"> Dr. Suril V. Shah </a> | Done In colaboration with (IISU) ISRO Inertial Systems Unit</span>
+                <br><br>
+                
+                <p style="font-size:100%;">
+                <b>Technologies:</b> Robot Operating System, Reachy arm, MoveIt, Dynamixel, Gazebo, Kinect<br>
+                <b>Keywords:</b> Robotic Manipulation, Motion Planning, Image-based control, Visual servoing, Velocity Control
+                </p>
+                <br><br>
+                <img src="../assets/images/projects/kinect_gazebo.png" alt="ISRO_proj" class="center">
+                <br><br>
+                <p style="font-size:100%;">
+                    A robotic arm was simulated and controlled with ROS from scratch to carry out various tasks and implement vision-based manipulation and grasping. A Reachy robotic arm was utilized as a template for the robotic arm.  This project was done in collaboration with ISRO Inertial Systems Unit as a precursor to their RESPOND project. 
+                    <br>
+                    We, as a group of two (Dhruv Krishna and I) B.Tech undergraduate students, worked on the project and accomplished the following:
+                    <br><br>
+                    <ul style="list-style-type: square;" >  
+                        <li>• Created the URDF for 7-DOF Reachy and Leachy robotic arm and simulated the arm in Gazebo by adding actuators and velocity Controllers using ROS Control package</li>
+                        <li>• Controlled real dynamixel motors via ROS and Python with custom package made using Dynamixel SDK. Implemented velocity control of dynamixel motors in ROS[<a href="https://github.com/sziddhant/Dynamixel_Velocity">Github</a>]</li>
+                        <li>• Added joint actuators and wrote Position and Trajectory Controller for the robot. Added a depth camera to the arm and retrieved RGB and Depth data from it.</li>
+                        <li>• Created a MoveIt package for Motion Planning in static envirionment with obstacles, Planned the trajectory for the Reachy arm in MoveIt! with and without obstacles</li>
+                        <li>• Implemented eye to hand image based visual servoing in Joint Space in Gazebo for the custom robot </li>
+                    </ul>
+                </p>
+                <br><br>
+                <img src="../assets/images/projects/full_reachy_gazebo.png" alt="ISRO_proj" class="center">
+               
+              
+
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<!-- //banner section -->
+
+ 
+<!-- Footer -->
+<section class="w3l-footer py-sm-5 py-4">
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-lg-8 footer-left">
+          <!-- <p class="m-0">Design by <a href="https://w3layouts.com">W3layouts</a></p> -->
+        </div>
+        <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+          <ul class="social m-0 p-0">
+            <li><a href="https://scholar.google.com/citations?hl=en&user=LeG7-foAAAAJ"><span class="fa fa-graduation-cap"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/siddhant-saoji/"><span class="fa fa-linkedin-square"></span></a></li>
+            <li><a href="https://github.com/sziddhant"><span class="fa fa-github"></span></a></li>
+            <li><a href="mailto:sziddhant@gmail.com"><span class="fa fa-envelope"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /move top -->
+</section>
+<!-- //Footer -->
+
+<!-- all js scripts and files here -->
+
+<script src="../assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<!-- bootstrap js -->
+<script src="../assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+

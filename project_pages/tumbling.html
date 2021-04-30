@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Learning-based Approach for Estimation of Axis of Rotation for Markerless Visual Servoing to Tumbling Objects</title>
+=======
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+
+* {
+    box-sizing: border-box;
+}
+.try {
+  padding: 60% 0% 0% 27%;
+}
+.column {
+    float: left;
+    width: 50%;
+  padding: 0% 0% 0% 0%;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 560px) {
+    .column {
+        width: 100%;
+       
+    }
+}
+	
+html,body,pre {
+
+
+
+  font-family: "calibri",curcive, sans-serif; 
+  color:#ffffff;
+}
+
+html, body {
+  
+  /* background-image: url(ghat2-mdin.jpeg); */
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center ;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #000000;
+}
+
+
+</style>
+
+
+  <!-- google fonts -->  
+  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style-starter.css">
+</head>
+
+<body>
+<!-- header -->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand" href="../index.html">
+              <span class="fa fa-terminal"></span> Siddhant
+          </a>
+          <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="../projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                    <a class="nav-link" href="../publications.html">Publications</a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                    <a class="nav-link" href="../experience.html">Experiences</a>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="../contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!-- //header -->
+
+<!-- banner section -->
+
+<section id="home" class="w3l-banner py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div>
+              <h1>Learning-based Approach for Estimation of Axis of Rotation for Markerless Visual Servoing to Tumbling Objects<sup>(April 2020- Jan 2021)</sup> </h1>
+
+              <span class="title-small">Mentor: <a href="http://surilshah.weebly.com/"> Dr. Suril V. Shah </a> and <a href="http://home.iitj.ac.in/~rn/">Dr. Rajendra Nagar</a> | B.Tech Project</span>
+              <p><a href="#link">Publication(Submitted):</a> Advances in Robotics (AIR2021) </p>
+                <br>                
+                <p style="font-size:100%;"><b>Technologies:</b> Tensorflow, Keras, VRep/CoppeliaSim, Blender, Nvidia DGX-2
+                  <br>
+                  <b>Keywords:</b> Convolutional Neural Network, Optical Flow, Visual Servoing, Image-based Control, Robotic Arm, Custom dataset</td>
+                </p>
+                <br><br>
+                <img src="../assets/images/projects/dd9.png" alt="ISRO_proj" class="center">
+                <br><br>
+                <p style="font-size:100%;">
+                  The ever-increasing satellite launches have resulted in thousands of satellites and debris orbiting the planet. These satellites require repair at times, or else they would add to the existing debris problem. On-Orbit servicing  of the orbiting satellites has become essential to maintain and repair the satellites in orbit. Space debris poses a potential risk to all the satellites in orbit and all future space missions. Capturing them and then proper disposal has thus become necessary for maintaining free operational space for other satellites. Space debris are of varying shapes and sizes. They are produced in various ways, like an impact of a satellite with space crafts, rocket upper stages and malfunctioning satellites.
+                  <br>
+                  The first step to perform on-orbit servicing or capturing space debris is to dock to or capture it before performing any other step. These objects are often non-cooperative and tumbling, which becomes a challenge. Most of the available solutions for these problems require a 3D model of the object or estimation of a 3D model using point cloud data using various sensors like LiDAR. The unknown dynamics and structure of the space debris make these methods infeasible. Even the solutions that do not require a 3D model require markers that are not always available, especially in debris.
+                  <br>
+                  We propose a novel featureless visual servoing approach for reaching the desired pose near a tumbling object. Unlike the previous, our method does not require estimating the 3D model of the tumbling object or markers on the tumbling object. The axis of rotation of a tumbling object rotating around this axis becomes a feature for performing visual servoing. The image taken from a camera is processed, and a neural network calculates the axis of rotation, which is integral for the task of visual servoing in this novel approach. The main contributions of the proposed work are : 
+                  <ul>  
+                    <li>• A marker-less approach to predict the axis of rotation and the angular velocity of a tumbling object using a convolutional neural network.</li>
+                    <li>• A visual servoing strategy that can attain the desired pose with respect to a rotating target without explicit reconstruction of the target's motion.</li>
+                  </ul>
+                  <br>
+                  <img src="../assets/images/projects/dd8.png" alt="ISRO_proj" class="center">
+                    <br><br>
+                    The following was accomplised as a part of the project:
+                    <br><br>
+                    
+                    <ul  >  
+                        <li>• A custom dataset of 600k videos (~300GB) of tumbling T-shaped objects was created using Blender. As a part of the preprocessing, Optical Flow was computed in a coarse to fine manner.</li>
+                        <li>• A Convolution Neural Network (CNN) was trained on the custom dataset to extracted static features of the tumbling object from the calculated optical flow. The extracted features were used in the control law to control the manipulator.(Nvidia DGX-2 was used to generate the dataset and train the model)</li>
+                        <li>• Position-Based Visual Servoing was simulated in a VRep environment with a tumbling object using the extracted features of the tumbling object on VRep.</li>
+                        
+                    </ul>
+                </p>
+                <br><br>
+                <img src="../assets/images/projects/setup.png" alt="ISRO_proj" class="center">
+               
+              
+
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<!-- //banner section -->
+
+ 
+<!-- Footer -->
+<section class="w3l-footer py-sm-5 py-4">
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-lg-8 footer-left">
+          <!-- <p class="m-0">Design by <a href="https://w3layouts.com">W3layouts</a></p> -->
+        </div>
+        <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+          <ul class="social m-0 p-0">
+            <li><a href="https://scholar.google.com/citations?hl=en&user=LeG7-foAAAAJ"><span class="fa fa-graduation-cap"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/siddhant-saoji/"><span class="fa fa-linkedin-square"></span></a></li>
+            <li><a href="https://github.com/sziddhant"><span class="fa fa-github"></span></a></li>
+            <li><a href="mailto:sziddhant@gmail.com"><span class="fa fa-envelope"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /move top -->
+</section>
+<!-- //Footer -->
+
+<!-- all js scripts and files here -->
+
+<script src="../assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<!-- bootstrap js -->
+<script src="../assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
